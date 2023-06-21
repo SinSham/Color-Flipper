@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Flipper</title>
+    <script src="./scripts.js" defer></script>
+    <style>
+
+        *{
+            margin:0px;
+            padding:0px;
+
+        }
+
+        .navbar{
+            background-color: black;
+            color:aliceblue;
+            text-align: center;
+        }
+
+
+        .navbar h2{
+            font-size: 36px;
+            padding: 20px;
+        }
+
+        .colorbar{
+            background-color: black;
+            border-radius: 6px;
+            margin: 18vh 34vw;
+            display: flex; 
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 22vh;
+            
+        }
+
+        .colorbar h2{
+            color: aliceblue;
+            text-align: center;
+        }
+
+        .colorbar button{
+            background-color: rgb(145, 147, 150);
+            border-radius: 8px;
+            padding: 8px 10px;
+            font-weight: bold;
+            margin-top: 40px;
+        }
+
+
+        .colorbar button:hover{
+            background-color: rgb(65, 71, 80);
+        } 
+
+    </style>
+
+</head>
+<body>
+    <nav class="navbar">
+        <h2>Color Flipper</h2>
+    </nav>
+
+    <div class="colorbar">
+        <div>
+            <h2>Background Color : <span class="color">#f1f5f8</span> </h2>
+        </div>
+        <div>
+            <button id="btn">Click Me</button>
+        </div>
+    </div>
+
+</body>
+</html>
